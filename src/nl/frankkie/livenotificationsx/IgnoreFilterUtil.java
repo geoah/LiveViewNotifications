@@ -1,4 +1,4 @@
-package nl.frankkie.livenotifications;
+package nl.frankkie.livenotificationsx;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -6,7 +6,7 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.view.accessibility.AccessibilityEvent;
 import java.util.ArrayList;
-import nl.frankkie.livenotifications.databaserows.IgnoreItem;
+import nl.frankkie.livenotificationsx.databaserows.IgnoreItem;
 import nl.wotuu.database.DatabaseOpenHelper;
 
 /**

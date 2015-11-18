@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import nl.frankkie.livenotifications.databaserows.IgnoreItem;
+import nl.frankkie.livenotificationsx.databaserows.IgnoreItem;
 
 import nl.wotuu.database.annotations.DatabaseExclude;
 import nl.wotuu.database.annotations.DatabasePrimaryKey;

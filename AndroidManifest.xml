@@ -8,7 +8,7 @@ Tries to get text from notification
 fixed not showing up on 4.2, by adding:
 android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
 android:exported="true"
-android:enabled="true"      
+android:enabled="true"
 
 1.0.1:
 fixed crash on <4.1
@@ -17,14 +17,14 @@ fixed crash on <4.1
 initial release
 //-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="nl.frankkie.livenotifications"
-          android:versionCode="4"
-          android:versionName="1.1">
+          package="nl.frankkie.livenotificationsx"
+          android:versionCode="5"
+          android:versionName="1.2">
     <supports-screens android:resizeable="true"
                       android:smallScreens="true"
                       android:normalScreens="true"
                       android:largeScreens="true"
-                      android:xlargeScreens="true" 
+                      android:xlargeScreens="true"
                       android:anyDensity="true" />
     <uses-feature android:name="android.hardware.bluetooth" />
     <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
@@ -32,8 +32,8 @@ initial release
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     <uses-sdk
-		android:minSdkVersion="4"
-		android:targetSdkVersion="15"/>
+		android:minSdkVersion="17"
+		android:targetSdkVersion="17"/>
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"  android:description="@string/application_description">
         <activity android:name="MainActivity"
                   android:label="@string/app_name">
@@ -42,7 +42,7 @@ initial release
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <service android:name="com.sonyericsson.extras.liveview.plugins.livenotifications.LiveNotificationsService"
                  android:label="LiveView Notifications plugin service">
             <intent-filter>
@@ -50,10 +50,10 @@ initial release
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </service>
-        <activity android:name="com.sonyericsson.extras.liveview.plugins.PluginPreferences" 
+        <activity android:name="com.sonyericsson.extras.liveview.plugins.PluginPreferences"
                   android:label="LiveView Notifications plugin preferences">
             <intent-filter>
-                <action android:name="com.sonyericsson.extras.liveview.plugins.livenotifications.PREFERENCES"></action> 	
+                <action android:name="com.sonyericsson.extras.liveview.plugins.livenotifications.PREFERENCES"></action>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -62,12 +62,12 @@ initial release
                 <action android:name="com.sonyericsson.extras.liveview.LAUNCH_PLUGIN" />
             </intent-filter>
         </receiver>
-        
+
         <!-- Acceablitiy Service //-->
         <service android:name=".MyAccessibilityService"
                  android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
                  android:exported="true"
-                 android:enabled="true"                 
+                 android:enabled="true"
                  android:label="@string/app_name">
             <meta-data
                 android:name="android.accessibilityservice"
@@ -77,7 +77,7 @@ initial release
             </intent-filter>
         </service>
         <!-- ENDOF Acceability Service //-->
-        
+
         <activity android:name=".IgnoreListActivity"/>
     </application>
 </manifest>

@@ -14,7 +14,7 @@ You can give this permission by enabling this app as Accessibility Service
 Don't forget to also enable this plugin in the LiveView settings.
 
 See the screenshots at Google Play to know how to enable this app.
-https://play.google.com/store/apps/details?id=nl.frankkie.livenotifications
+https://play.google.com/store/apps/details?id=nl.frankkie.livenotificationsx
 
 (Root is not required)
 

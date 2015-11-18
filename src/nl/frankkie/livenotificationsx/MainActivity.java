@@ -1,4 +1,4 @@
-package nl.frankkie.livenotifications;
+package nl.frankkie.livenotificationsx;
 
 import android.app.Activity;
 import android.app.AlertDialog;

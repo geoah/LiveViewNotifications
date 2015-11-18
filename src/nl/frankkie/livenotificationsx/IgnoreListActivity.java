@@ -1,4 +1,4 @@
-package nl.frankkie.livenotifications;
+package nl.frankkie.livenotificationsx;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -18,8 +18,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import static nl.frankkie.livenotifications.IgnoreFilterUtil.ignoreItems;
-import nl.frankkie.livenotifications.databaserows.IgnoreItem;
+import static nl.frankkie.livenotificationsx.IgnoreFilterUtil.ignoreItems;
+import nl.frankkie.livenotificationsx.databaserows.IgnoreItem;
 import nl.wotuu.database.DatabaseOpenHelper;
 
 /**

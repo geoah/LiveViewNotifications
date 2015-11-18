@@ -1,4 +1,4 @@
-package nl.frankkie.livenotifications;
+package nl.frankkie.livenotificationsx;
 
 import android.accessibilityservice.AccessibilityService;
 import android.app.Notification;

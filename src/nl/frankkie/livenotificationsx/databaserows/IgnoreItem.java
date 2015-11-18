@@ -1,4 +1,4 @@
-package nl.frankkie.livenotifications.databaserows;
+package nl.frankkie.livenotificationsx.databaserows;
 
 import nl.wotuu.database.DatabaseOpenHelper;
 import nl.wotuu.database.DatabaseRow;
