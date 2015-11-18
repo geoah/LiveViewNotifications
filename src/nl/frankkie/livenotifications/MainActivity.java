@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import nl.wotuu.database.DatabaseOpenHelper;
+import com.sonyericsson.extras.liveview.plugins.livenotifications.LiveNotificationsService;
 
 public class MainActivity extends Activity {
 
@@ -24,25 +25,30 @@ public class MainActivity extends Activity {
         Button btn = (Button) findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-                Intent intent = new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
-                try {
-                    startActivity(intent);
-                    Toast.makeText(MainActivity.this,getString(R.string.hint_message),Toast.LENGTH_LONG).show();
-                } catch (Exception e) {
-                    failed();
-                    e.printStackTrace();
+                // Show on LiveView
+                LiveNotificationsService liveViewService = LiveNotificationsService.getInstance();
+                if (liveViewService != null) {
+                    liveViewService.sendAnnounce("Ping", "...");
                 }
+                // Intent intent = new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                // try {
+                //     startActivity(intent);
+                //     Toast.makeText(MainActivity.this,getString(R.string.hint_message),Toast.LENGTH_LONG).show();
+                // } catch (Exception e) {
+                //     failed();
+                //     e.printStackTrace();
+                // }
             }
         });
-        
-        findViewById(R.id.btn_ignore_list).setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View arg0) {
-                Intent i = new Intent();
-                i.setClass(MainActivity.this, IgnoreListActivity.class);
-                startActivity(i);
-            }
-        });
+        // findViewById(R.id.btn_ignore_list).setOnClickListener(new View.OnClickListener() {
+        //
+        //     public void onClick(View arg0) {
+        //         Intent i = new Intent();
+        //         i.setClass(MainActivity.this, IgnoreListActivity.class);
+        //         startActivity(i);
+        //     }
+        // });
     }
 
     public void failed() {
