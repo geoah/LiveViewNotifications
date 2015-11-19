@@ -1,5 +1,5 @@
-<PreferenceScreen	xmlns:android="http://schemas.android.com/apk/res/android"	
-                        android:title="LiveView Notifications plugin">
+<PreferenceScreen	xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:title="Soothe">
     <CheckBoxPreference android:key="pluginEnabled"
                             android:title="Enabled"
                             android:order = "0"
